@@ -1,0 +1,7 @@
+<config>
+    <modules>
+        <Sofomo_Customer>
+            <version>0.1.0</version>
+        </Sofomo_Customer>
+    </modules>
+</config>

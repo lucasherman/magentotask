@@ -1,0 +1,8 @@
+<config>
+    <modules>
+        <Sofomo_Customer>
+           <active>true</active>
+           <codePool>local</codePool>
+        </Sofomo_Customer>
+    </modules>
+</config>
