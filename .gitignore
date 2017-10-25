@@ -1,1 +1,8 @@
 /app/etc/local.xml
+
+# Magento runtime media files
+media/catalog/product/cache/
+media/tmp/
+media/js/
+media/css/
+media/.thumbs/
