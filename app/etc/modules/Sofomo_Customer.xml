@@ -5,4 +5,16 @@
            <codePool>local</codePool>
         </Sofomo_Customer>
     </modules>
+
+    <frontend>
+        <routers>
+            <checkout>
+                <args>
+                    <modules>
+                        <Sofomo_Customer before="Mage_Checkout">Sofomo_Customer</Sofomo_Customer>
+                    </modules>
+                </args>
+            </checkout>
+        </routers>
+    </frontend>
 </config>

@@ -4,4 +4,36 @@
             <version>0.1.0</version>
         </Sofomo_Customer>
     </modules>
+    <global>
+        <resources>
+            <sofomo_customer_setup>
+                <setup>
+                    <module>Sofomo_Customer</module>
+                    <class>Sofomo_Customer_Model_Resource_Setup</class>
+                </setup>
+            </sofomo_customer_setup>
+        </resources>
+    </global>
+    <frontend>
+        <events>
+            <sales_quote_collect_totals_before>
+                <observers>
+                    <sales_quote_collect_totals_before>
+                        <type>singleton</type>
+                        <class>Sofomo_Customer_Model_Observer</class>
+                        <method>hookToSalesQuoteCollectTotalsBefore</method>
+                    </sales_quote_collect_totals_before>
+                </observers>
+            </sales_quote_collect_totals_before>
+            <sales_quote_collect_totals_after>
+                <observers>
+                    <sales_quote_collect_totals_after>
+                        <type>singleton</type>
+                        <class>Sofomo_Customer_Model_Observer</class>
+                        <method>hookToSalesQuoteCollectTotalsAfter</method>
+                    </sales_quote_collect_totals_after>
+                </observers>
+            </sales_quote_collect_totals_after>
+        </events>
+    </frontend>
 </config>
